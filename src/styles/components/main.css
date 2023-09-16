@@ -1,5 +1,5 @@
 .hero {
-  font-size: calc(4000vw / 1018);
+  font-size: 2.5rem;
 }
 .firstTitle {
   display: flex;
@@ -13,44 +13,75 @@
   transform: translateY(-14px);
   color: rgb(8, 41, 73);
 }
+.heroLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
 
 .splash {
   width: 100%;
   z-index: -1;
+  position: absolute;
 }
 .beer {
-  width: 100%;
-  z-index: 0;
-}
-.heroLogo img {
   position: absolute;
   top: 0;
-  left: 0;
-  transform: translateY(8rem);
-}
-
-.exploreLink {
-  background-color: rgb(8, 41, 73);
-  padding: 0.7rem;
-  color: white;
-  text-decoration: none;
-  border-radius: 15px;
-  z-index: 2;
+  left: 25;
+  width: 40%;
+  z-index: 0;
+  transform: translateY(-4rem);
 }
 
 .heroLink {
   display: flex;
   justify-content: center;
-  margin-top: 35rem;
+  margin-top: 23rem;
   background-color: rgb(255, 247, 227);
   padding: 1rem;
-  padding-bottom: 60rem;
+  padding-bottom: 8rem;
   position: relative;
   z-index: 1;
   box-shadow: 0px -35px 45px 24px rgba(255, 247, 227, 0.99);
 }
-.exploreLink :hover {
-  transition: 2ms;
-  text-decoration: underline;
-  color: aqua;
+
+.exploreLink {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 0.7rem;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.exploreLink:after {
+  content: "";
+  background-color: rgb(8, 41, 73);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.exploreLink:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .exploreLink {
+    padding: 13px 50px 13px;
+  }
 }

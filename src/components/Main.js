@@ -8,12 +8,10 @@ const Main = () => {
       <h1 className="secondTitle">Appetite for beer</h1>{" "}
       <div className="heroLogo">
         <img className="splash" src="./splash.png" alt="" />
-        <img className="beer" src="./beer.webp" alt="" />
+        <img className="beer" src="./beerTwo.png" alt="" />
       </div>
       <div className="heroLink">
-        <a className="exploreLink" href="#">
-          Explore Oportunities
-        </a>
+        <button className="exploreLink">Explore Oportunities</button>
         <div className="linkShadow"></div>
       </div>
     </div>
